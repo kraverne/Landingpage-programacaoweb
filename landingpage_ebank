@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The E-Bank</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: left;
+            padding: 20px;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #007BFF;
+            margin-bottom: 15px;
+        }
+
+        p {
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        strong {
+            font-weight: bold;
+        }
+
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        #team {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .member {
+            flex-basis: calc(33.33% - 20px);
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .member img {
+            width: 100px;
+            border-radius: 50%;
+            margin: 10px;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        form label,
+        form input,
+        form textarea,
+        form button {
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        form button {
+            background-color: #007BFF;
+            color: #fff;
+            cursor: pointer;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>The E-Bank</h1>
+    </header>
+
+    <section>
+        <h2>Nosso Produto</h2>
+        <p>Em um mundo em constante evolução técnológica, apresentamos o nosso Banco eletrônico, o The E-bank, uma revolução no setor financeiro. Oferecemos uma experiência bancária rápida, segura e conveniente, totalmente acessível a partir do conforto do seu dispositivo.</p>
+        <p><strong>Nosso Compromisso:</strong></p>
+        <ul>
+            <li><strong>Agilidade Financeira:</strong> Permitimos que você realize suas transações bancárias em tempo real, sem a necessidade de deslocamentos. Com apenas alguns cliques, tenha controle total sobre suas finanças.</li>
+            <li><strong>Segurança Inovadora:</strong> Utilizamos as mais avançadas tecnologias de segurança para garantir que suas informações estejam protegidas. Transações criptografadas e autenticação multifatorial são apenas o começo.</li>
+            <li><strong>Atendimento Personalizado:</strong> Apesar de ser um banco eletrônico, nossa equipe virtual está sempre pronta para atendê-lo. Acesse o suporte online para resolver suas dúvidas e receber assistência personalizada.</li>
+        </ul>
+        <img src="produto.png" alt="Produto Ilustrativo">
+        <img src="produto2.png" alt="Produto Ilustrativo2">
+    </section>
+
+    <section id="team">
+        <h2>Nossa Equipe</h2>
+        <div class="member">
+            <img src="anasilva.png" alt="Membro da Equipe 1">
+            <h3>Ana Silva</h3>
+            <p>Diretora de Tecnologia (CTO): Ana lidera nossa equipe de desenvolvimento, garantindo que estejamos sempre na vanguarda da inovação tecnológica. Com anos de experiência em fintechs, ela é apaixonada por transformar a experiência bancária por meio da tecnologia.</p>
+        </div>
+        <div class="member">
+            <img src="rafael.png" alt="Membro da Equipe 2">
+            <h3>Rafael Santos</h3>
+            <p>Especialista em Segurança Digital (CSO): Rafael é o guardião das informações dos nossos clientes. Sua expertise em segurança cibernética e sua abordagem proativa asseguram que nosso ambiente digital seja impenetrável, proporcionando tranquilidade aos nossos usuários.</p>
+        </div>
+        <div class="member">
+            <img src="camila.png" alt="Membro da Equipe 3">
+            <h3>Camila Oliveira</h3>
+            <p>Atendimento ao Cliente (CSC): Camila é a voz calorosa e amigável que você encontra em nossos canais de suporte. Seja para resolver problemas ou oferecer orientações, ela está comprometida em proporcionar uma experiência ao cliente excepcional.</p>
+        </div>
+        <!-- Adicione mais membros conforme necessário -->
+    </section>
+
+    <form>
+        <h2>Inscreva-se</h2>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="cidade">Cidade:</label>
+        <input type="text" id="cidade" name="cidade" required>
+
+        <label for="estado">Estado:</label>
+        <input type="text" id="estado" name="estado" required>
+
+        <button type="submit">Enviar</button>
+    </form>
+
+</body>
+</html>
